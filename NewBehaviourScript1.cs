@@ -7,7 +7,7 @@ public class NewBehaviourScript1 : MonoBehaviour
     public Transform sphere;
     void Update()
     { //przypisy
-        Rigidbody rigidbody = transform.GetComponent<Rigidbody>();
+        Rigidbody rigidbody = sphere.GetComponent<Rigidbody>();
         float velocity = rigidbody.velocity.sqrMagnitude;
         Vector3 vector = new Vector3(0, 5f, -5f);
         //test
